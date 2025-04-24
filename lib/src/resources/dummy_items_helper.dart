@@ -6,7 +6,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Margherita Pizza',
       'isVeg': 1,
       'imageUrl':
-          'https://images.unsplash.com/photo-1601924582975-dfbdc92c6b3e',
+          'https://images.unsplash.com/photo-1586190848861-99aa4a171e90',
       'price': 7.99,
       'restaurantName': 'Pizzeria Uno',
       'mealType': 'Main Course',
@@ -18,7 +18,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Butter Chicken',
       'isVeg': 0,
       'imageUrl':
-          'https://images.unsplash.com/photo-1626082907723-9d1a122f951f',
+          'https://images.unsplash.com/photo-1577805947697-89e18249d767',
       'price': 9.49,
       'restaurantName': 'Tandoori Flames',
       'mealType': 'Main Course',
@@ -30,7 +30,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Veg Biryani',
       'isVeg': 1,
       'imageUrl':
-          'https://images.unsplash.com/photo-1629198415156-12ed62f10e4d',
+          'https://images.unsplash.com/photo-1586190848861-99aa4a171e90',
       'price': 6.49,
       'restaurantName': 'Biryani House',
       'mealType': 'Main Course',
@@ -66,7 +66,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Gulab Jamun',
       'isVeg': 1,
       'imageUrl':
-          'https://images.unsplash.com/photo-1633027921463-cf457eff5f3b',
+          'https://images.unsplash.com/photo-1577805947697-89e18249d767',
       'price': 2.49,
       'restaurantName': 'Sweet Delights',
       'mealType': 'Dessert',
@@ -78,7 +78,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Veg Momos',
       'isVeg': 1,
       'imageUrl':
-          'https://images.unsplash.com/photo-1660389705565-68889a314c1b',
+          'https://images.unsplash.com/photo-1586190848861-99aa4a171e90',
       'price': 4.50,
       'restaurantName': 'Tibetan Tummy',
       'mealType': 'Snack',
@@ -90,7 +90,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Cold Coffee',
       'isVeg': 1,
       'imageUrl':
-          'https://images.unsplash.com/photo-1598899134739-eedf1b51d04c',
+          'https://images.unsplash.com/photo-1577805947697-89e18249d767',
       'price': 3.50,
       'restaurantName': 'Bean Scene',
       'mealType': 'Drink',
@@ -102,7 +102,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Paneer Tikka',
       'isVeg': 1,
       'imageUrl':
-          'https://images.unsplash.com/photo-1612336307427-b43de56e9c4d',
+          'https://images.unsplash.com/photo-1586190848861-99aa4a171e90',
       'price': 6.99,
       'restaurantName': 'Punjabi Dhaba',
       'mealType': 'Starter',
@@ -114,7 +114,7 @@ void prepopulateFoodItems(Database db) {
       'name': 'Chicken Burger',
       'isVeg': 0,
       'imageUrl':
-          'https://images.unsplash.com/photo-1606755962771-18ce6ec9bc6c',
+          'https://images.unsplash.com/photo-1577805947697-89e18249d767',
       'price': 5.25,
       'restaurantName': 'Burger Craze',
       'mealType': 'Snack',

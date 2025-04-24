@@ -1,4 +1,4 @@
-import 'package:brandopedia_min_proj/src/resources/dummy_items_helper.dart';
+import '../resources/dummy_items_helper.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart' show FutureProvider;
 import 'package:sqlite3/sqlite3.dart';
 import 'package:path_provider/path_provider.dart';

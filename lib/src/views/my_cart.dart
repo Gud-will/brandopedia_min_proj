@@ -1,8 +1,9 @@
-import 'package:brandopedia_min_proj/src/views/widgets/cart_item_card.dart';
+import 'widgets/cart_item_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/cart_notifier.dart';
+import 'widgets/slide_to_order.dart';
 
 class MyCart extends ConsumerStatefulWidget {
   const MyCart({super.key});
@@ -19,7 +20,10 @@ class _MyCartState extends ConsumerState<MyCart> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text("Cart"),
+        title: Text(
+          "Cart",
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
         centerTitle: true,
         automaticallyImplyLeading: true,
       ),
@@ -29,7 +33,7 @@ class _MyCartState extends ConsumerState<MyCart> {
             top: 30,
             left: 18,
             right: 18,
-            bottom: 50,
+            bottom: 14,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,10 +65,26 @@ class _MyCartState extends ConsumerState<MyCart> {
                     "Total",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
-                  Text(cartNotifier.totalPrice.toString()),
+                  Text(cartNotifier.totalPrice.toStringAsFixed(2)),
                 ],
               ),
-              ElevatedButton(onPressed: () {}, child: Text("Order Now")),
+              SlideToPayButton(onSlideComplete: () {}),
+              // TextButton(
+              //   onPressed: () {
+              //   },
+              //   style: TextButton.styleFrom(
+              //     shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.circular(30),
+              //     ),
+              //     backgroundColor: Colors.blue,
+              //     foregroundColor: Colors.white,
+              //     padding: const EdgeInsets.symmetric(vertical: 16),
+              //     minimumSize: const Size.fromHeight(
+              //       50,
+              //     ), // makes it occupy full width
+              //   ),
+              //   child: const Text('Click Me', style: TextStyle(fontSize: 16)),
+              // ),
             ],
           ),
         ),

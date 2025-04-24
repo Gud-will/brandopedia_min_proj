@@ -6,11 +6,13 @@ import '../../providers/cart_notifier.dart';
 
 class FoodItemCard extends StatelessWidget {
   final FoodItem item;
+  final VoidCallback trigger;
   final CartNotifier cartNotifier;
   const FoodItemCard({
     super.key,
     required this.item,
     required this.cartNotifier,
+    required this.trigger,
   });
 
   @override
@@ -55,6 +57,7 @@ class FoodItemCard extends StatelessWidget {
                 const SizedBox(height: 8),
                 TextButton(
                   onPressed: () {
+                    trigger();
                     cartNotifier.addToCart(
                       CartItem(
                         foodName: item.name,

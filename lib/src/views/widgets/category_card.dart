@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CategoryCard extends StatelessWidget {
-  const CategoryCard({super.key});
+  final String categoryname;
+  final IconData categoryicon;
+  const CategoryCard({
+    super.key,
+    required this.categoryname,
+    required this.categoryicon,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -12,11 +18,11 @@ class CategoryCard extends StatelessWidget {
             color: Colors.deepPurple.shade100,
             shape: BoxShape.circle,
           ),
-          padding: EdgeInsets.all(10),
-          child: Icon(Icons.fastfood, color: Colors.deepPurple),
+          padding: EdgeInsets.all(12),
+          child: Icon(categoryicon, color: Colors.deepPurple),
         ),
         SizedBox(height: 4),
-        Text("Food"),
+        Text(categoryname),
       ],
     );
   }
